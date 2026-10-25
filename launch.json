@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SwornToken",
+    "name": "swornbyswarm",
+    "symbol": "SWORN",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 7000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0xee2aaa315cf7ed169f93148d30d24af9318dbb66"
+  },
+  "notes": "SwornToken (src/SwornToken.sol) is the swornbyswarm (SWORN) token: a plain, fixed-supply OpenZeppelin v5 ERC-20 with 18 decimals. Its constructor takes no arguments and mints INITIAL_SUPPLY = 1,000,000,000 * 10^18 = 1000000000000000000000000000 base units once to msg.sender, the launch factory. There is no owner, no mint or burn entry point after construction, no transfer fee, tax, pause, blocklist, or upgrade path, and no external calls; every transfer moves exactly the requested amount, so the factory's transfer to the MerkleDistributor, the single-sided pool seed, claims, and trades need no exemptions. The project ships no application contracts. Branding references: sworn.sites.imd.fun and x.com/swornbyswarm."
+}
